@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0a0a0a;
+  color: #e6e6e6;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(180deg, #000000, #111111);
+}
+
+.hero h1 {
+  font-size: 46px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #c7a84a;
+  font-size: 18px;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 14px;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 15px;
+}
+
+button {
+  padding: 15px;
+  background: #c7a84a;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b4963f;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  color: #777;
+}
