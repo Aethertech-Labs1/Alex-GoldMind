@@ -1,66 +1,105 @@
+/* RESET BÁSICO */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #0a0a0a;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0b0b0d;
   color: #e6e6e6;
+  line-height: 1.6;
 }
 
+/* LINKS */
+a {
+  color: #c9a24d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
 .hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(180deg, #000000, #111111);
+  padding: 2rem;
+  background: radial-gradient(circle at top, #1a1a1f, #0b0b0d);
 }
 
 .hero h1 {
-  font-size: 46px;
+  font-size: 3rem;
   letter-spacing: 2px;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
-  margin-top: 15px;
-  color: #c7a84a;
-  font-size: 18px;
+  font-size: 1.2rem;
+  color: #b5b5b5;
 }
 
+/* SECCIONES */
 section {
-  max-width: 800px;
-  margin: auto;
-  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
-.register form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #c9a24d;
 }
 
-input {
-  padding: 14px;
-  background: #111;
-  border: 1px solid #333;
-  color: #fff;
-  font-size: 15px;
+section p {
+  color: #cfcfcf;
 }
 
-button {
-  padding: 15px;
-  background: #c7a84a;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
+/* ACCESO ANTICIPADO */
+.early-access {
+  text-align: center;
+  border-top: 1px solid #1f1f24;
+  border-bottom: 1px solid #1f1f24;
+  background-color: #0f0f13;
 }
 
-button:hover {
-  background: #b4963f;
+.btn-primary {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.9rem 2.2rem;
+  border: 1px solid #c9a24d;
+  color: #c9a24d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
 }
 
+.btn-primary:hover {
+  background-color: #c9a24d;
+  color: #0b0b0d;
+  text-decoration: none;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
-  font-size: 13px;
-  color: #777;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #8a8a8a;
+  background-color: #0b0b0d;
+}
+
+footer a {
+  color: #8a8a8a;
+}
+
+footer a:hover {
+  color: #c9a24d;
 }
